@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melka Adama Hotel</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 80px;
+  background: #f6f6f6;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+header h2 {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 35px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+  scroll-margin-top: 100px;
+}
+
+/* ABOUT */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* MAP */
+iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* BUTTONS */
+.call-btn, .whatsapp-btn {
+  position: fixed;
+  right: 20px;
+  padding: 12px 16px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.call-btn { bottom: 20px; background: green; }
+.whatsapp-btn { bottom: 70px; background: #25D366; }
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+footer img {
+  height: 40px;
+  border-radius: 6px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .about { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>Melka Adama Hotel</h2>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Features</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Comfort • Luxury • Stay Relaxed</h1>
+</div>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <img src="hotel.jpg">
+  <div>
+    <h2>About Us</h2>
+    <p>
+      Melka Adama Hotel is located in Dire Dawa, Ethiopia. We offer comfortable accommodation
+      with modern services for travelers and guests.
+    </p>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="services">
+  <h2>Hotel Features</h2>
+  <div class="features">
+    <div class="card">Free WiFi</div>
+    <div class="card">Parking Area</div>
+    <div class="card">Clean Rooms</div>
+    <div class="card">24/7 Service</div>
+    <div class="card">Friendly Staff</div>
+    <div class="card">Affordable Price</div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+  <h2>Our Rooms</h2>
+  <div class="gallery">
+    <img src="room1.jpg">
+    <img src="room2.jpg">
+    <img src="room1.jpg">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p><a href="tel:000000000">📞 Call Hotel</a></p>
+
+  <iframe 
+    src="https://www.google.com/maps?q=8.528225,39.240250&z=18&output=embed">
+  </iframe>
+</section>
+
+<!-- BUTTONS -->
+<a class="call-btn" href="tel:000000000">Call Now</a>
+<a class="whatsapp-btn" href="https://wa.me/251000000000">WhatsApp</a>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-box">
+    <img src="logo.jpg">
+    <div>
+      Melka Adama Hotel | Dire Dawa <br>
+      <small>Made by Nebbedin</small>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
